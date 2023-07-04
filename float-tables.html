@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /*==========CSS========*/
+      table {
+        border-spacing: 0;
+      }
+      td {
+        padding: 0;
+      }
+      .outer {
+        margin: 0 auto;
+        width: 100%;
+        max-width: 600px;
+      }
+      .full-width-image img {
+        width: 100%;
+        height: auto;
+      }
+      .inner {
+        padding: 5px 5px;
+      }
+
+      /*=========ONE COLUMN CSS=======*/
+
+      .one-column .contents {
+        text-align: left;
+      }
+      .one-column p {
+        font-size: 14px;
+        margin-bottom: 10px;
+      }
+      /*=========TOW COLUMN CSS======*/
+    div{
+        display: inline-block;
+    }
+      .two-column .column {
+        width: 100%;
+        max-width: 300px;
+        display: inline-block;
+        vertical-align: top;
+      }
+      .two-column {
+        text-align: center;
+        font-size: 0;
+      }
+
+      .contents {
+        width: 100%;
+      }
+      .two-column .contents {
+        font-size: 14px;
+        text-align: left;
+      }
+      .two-column img {
+        width: 100%;
+        height: auto;
+      }
+      .two-column .text {
+        padding-top: 15px;
+      }
+      .text {
+        padding-top: 15px;
+        font-size: 14px;
+        text-align:left;
+      }
+    </style>
+  </head>
+  <body>
+    <table class="outer" align="center">
+      <!--OUTER TABLE-->
+      <tr>
+        <!--row 1 start -->
+        <td class="one-colunm">
+          <table width="100%">
+            <!--one column text-->
+            <tr>
+              <td class="inner contents">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum
+                  adipisci architecto provident vel beatae earum doloremque
+                  fugit, tenetur voluptate iure aliquam mollitia, delectus totam
+                  necessitatibus pariatur excepturi, magni natus tempora.
+                </p>
+              </td>
+            </tr>
+          </table>
+          <!--one column text end-->
+        </td>
+      </tr>
+      <!--row 1 end-->
+      <tr>
+        <!--row 2 start -->
+        <td class="two-column">
+          <div class="column">
+            <table width="100%">
+              <tr>
+                <td class="inner">
+                  <table classs="contents">
+                    <tr>
+                      <td>
+                        <img
+                          src="https://drive.google.com/uc?export=view&id=12hOOzG0hDqgY07TbTnJEPwHnHvpPBlDi"
+                        />
+                      </td>
+                    </tr><td class="text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Libero a ex corrupti, earum aliquam aut fugiat, nesciunt
+                        et doloremque sunt eligendi velit iste mollitia
+                        molestias laborum voluptatem deserunt vitae repudiandae?
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+          </div>
+          <!--duplicate div with table START-->
+          <div class="column">
+            <table width="100%">
+              <tr>
+                <td class="inner">
+                  <table class="contents">
+                    <tr>
+                      <td>
+                        <img
+                          src="https://drive.google.com/uc?export=view&id=12hOOzG0hDqgY07TbTnJEPwHnHvpPBlDi"
+                        />
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Explicabo provident totam repellendus eaque possimus aut
+                        deleniti nostrum doloremque nobis nemo autem aliquid, ea
+                        maiores assumenda laborum expedita dicta quod itaque.
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+          </div>
+          <!--DUPLICATE DIV WITH TABLE END-->
+        </td>
+      </tr>
+      <!--row2 end-->
+    </table>
+    <!--OUTER TABLE END-->
+  </body>
+</html>
